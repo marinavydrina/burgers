@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "Gagalin";
+    src: url("../../fonts/Gagalin-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: optional;
+}
+
+@font-face {
+    font-family: "Lifehack";
+    src: url("../../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../../fonts/lifehack_medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: optional;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    overflow: hidden;
+    min-width: 1100px;
+    min-height: 100%;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.first {
+    background-image: url(../../img/fon1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
+
+.header {
+    vertical-align: middle;
+    padding-top: 13px;
+}
+
+.header__logo {
+    display: inline-block;
+    width: 14%;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.header__navigation {
+    width: 70%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navigation {
+    text-align: right;
+    vertical-align: middle;
+}
+
+.navigation__list {
+    margin: 0 auto;
+    padding-left: 0;
+    display: inline-block;
+}
+
+.navigation__link {
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navigation__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 22px;
+}
+
+.navigation__item:last-of-type {
+    margin-right: 0;
+}
+
+.navigation__text {
+    display: inline-block;
+    margin: 0 auto;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.header__button {
+    display: inline-block;
+    width: 14%;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.button {
+    height: 45px;
+    width: 125px;
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #f0f0f0;
+    background-color: #e45028;
+    border: none;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.banner {
+    padding-top: 58px;
+    vertical-align: middle;
+}
+
+.banner__text {
+    display: inline-block;
+    vertical-align: middle;
+    width: 49%;
+    box-sizing: border-box;
+}
+
+.banner__img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.banner__text-title {
+    text-transform: uppercase;
+    font-family: "Gagalin";
+    font-size: 70px;
+    color: #f9b43b;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.banner__text-desc {
+    font-family: "Lifehack";
+    font-size: 60px;
+    color: #ffffff;
+    box-sizing: border-box;
+    line-height: 0.95em;
+}
