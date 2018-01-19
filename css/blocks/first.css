@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Gagalin";
+    font-family: "gagalin";
     src: url("../../fonts/gagalin-regular-webfont.woff2") format("woff2"), url("../../fonts/gagalin-regular-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: "Lifehack";
+    font-family: "lifehack";
     src: url("../../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../../fonts/lifehack_medium-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
@@ -21,7 +21,7 @@ body {
 }
 
 body {
-    font-family: "Ubuntu", Arial, sans-serif;
+    font-family: "ubuntu", arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -154,7 +154,7 @@ a {
 }
 
 .button {
-    font-family: "Ubuntu", Arial, sans-serif;
+    font-family: "ubuntu", arial, sans-serif;
     font-weight: 500;
     height: 35px;
     width: 100px;
@@ -188,7 +188,7 @@ a {
 
 .banner__text-title {
     text-transform: uppercase;
-    font-family: "Gagalin";
+    font-family: "gagalin";
     font-size: 70px;
     color: #f9b43b;
     margin: 0;
@@ -197,7 +197,7 @@ a {
 }
 
 .banner__text-desc {
-    font-family: "Lifehack";
+    font-family: "lifehack";
     font-size: 60px;
     color: #ffffff;
     box-sizing: border-box;
