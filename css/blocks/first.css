@@ -26,6 +26,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+p {
+    margin: 0;
+}
+
 ul {
     padding: 0;
     margin: 0;
@@ -51,7 +55,7 @@ a {
     clear: both;
 }
 
-.first {
+.section-first {
     background-image: url(../../img/fon1.png);
     background-size: cover;
     background-repeat: no-repeat;
