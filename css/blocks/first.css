@@ -67,7 +67,7 @@ a {
     height: 100vh;
 }
 
-.first::before {
+.section-first::before {
     content: "";
     display: block;
     width: 100%;
@@ -81,62 +81,56 @@ a {
 .container {
     margin: 0 auto;
     width: 940px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
 .header {
-    vertical-align: middle;
-    padding-top: 13px;
+    height: 80px;
+    width: 940px;
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: flex-end;
     font-weight: 500;
+    padding-top: 9px;
 }
 
 .header__logo {
-    display: inline-block;
-    width: 14%;
+    margin-right: auto;
 }
 
-.logo {
-    display: inline-block;
-}
+.header__navigation {}
 
-.header__navigation {
-    width: 75%;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.navigation {
-    text-align: right;
-    vertical-align: middle;
-}
+.navigation {}
 
 .navigation__list {
-    margin: 0 auto;
-    padding-left: 0;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
 }
 
 .navigation__link {
     font-size: 13px;
     color: #ffffff;
     text-decoration: none;
-    display: inline-block;
-    vertical-align: middle;
 }
 
 .navigation__item {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 12px;
+    margin-right: 17px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .navigation__item::before {
     content: ' \25CF';
     font-size: 9px;
     color: white;
-    margin-right: 12px;
+    margin-right: 17px;
 }
 
 .navigation__item:first-of-type::before {
@@ -144,18 +138,10 @@ a {
 }
 
 .navigation__text {
-    display: inline-block;
-    margin: 0 auto;
-    vertical-align: middle;
     text-transform: uppercase;
 }
 
-.header__button {
-    display: inline-block;
-    width: 12%;
-    vertical-align: middle;
-    text-align: right;
-}
+.header__button {}
 
 .button {
     font-family: "ubuntu", arial, sans-serif;
@@ -173,21 +159,18 @@ a {
 }
 
 .banner {
-    padding-top: 8%;
-    padding-bottom: 10%
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    width: 940px;
+    margin: auto;
 }
 
-.banner__text {
-    display: inline-block;
-    vertical-align: middle;
-    width: 49%;
-    box-sizing: border-box;
-}
+.banner__text {}
 
 .banner__img {
-    display: inline-block;
-    vertical-align: middle;
-    width: 50%;
+    margin-right: 15px;
 }
 
 .banner__text-title {
@@ -204,7 +187,6 @@ a {
     font-family: "lifehack";
     font-size: 60px;
     color: #ffffff;
-    box-sizing: border-box;
     line-height: 0.95em;
 }
 
