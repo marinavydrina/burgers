@@ -27,6 +27,15 @@ a {
     text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
 .wrapper {
     position: relative;
     min-width: 960px;
@@ -46,6 +55,8 @@ a {
     background-repeat: no-repeat;
     position: relative;
     background-position: center center;
+    overflow: hidden;
+    position: relative;
 }
 
 .container {
@@ -57,9 +68,6 @@ a {
 
 .welcome {
     background-image: url(../../img/fon1.png);
-    overflow: hidden;
-    position: relative;
-    height: 100vh;
 }
 
 .welcome::before {
@@ -91,10 +99,6 @@ a {
 
 .navigation__item {
     margin-right: 17px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-transform: uppercase;
 }
 
 .navigation__link {
@@ -102,17 +106,24 @@ a {
     font-size: 13px;
     color: #f0f0f0;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .navigation__item::before {
-    content: ' \25CF';
-    font-size: 9px;
-    color: white;
-    margin-right: 17px;
+    content: ' ';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-right: 15px;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 .navigation__item:first-of-type::before {
     content: ' ';
+    width: 0;
+    height: 0;
 }
 
 .button {
@@ -165,9 +176,7 @@ a {
     text-transform: uppercase;
     font-family: "gagalin", arial, sans-serif;
     font-weight: 400;
-    font-size: 70px;
-    margin: 0;
-    margin-top: 40px;
+    font-size: 72px;
     letter-spacing: 2px;
 }
 
