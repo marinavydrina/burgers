@@ -17,6 +17,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 940px;
 }
 
 .advantages__item {
