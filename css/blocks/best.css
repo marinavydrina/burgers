@@ -1,4 +1,64 @@
-.section-best {
+.best {
+    background-image: url(../../img/bg.png);
+    color: #2f3234;
+}
+
+.best .container {
+    justify-content: center;
+    align-items: center;
+}
+
+.best .section__title {
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.advantages__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 940px;
+}
+
+.advantages__item {
+    margin-bottom: 30px;
+}
+
+.advantage__icon {
+    margin-bottom: 30px;
+}
+
+.advantage__img {}
+
+.advantage {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+}
+
+.advantage__title {
+    text-align: center;
+    font-family: "lifehack", arial, sans-serif;
+    ;
+    line-height: 1.25em;
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.advantage__description {
+    text-align: center;
+    font-family: "ubuntu", arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+/*
+.section__best {
     background-image: url(../../img/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -8,7 +68,7 @@
     height: 100vh;
 }
 
-.container-best {
+.container__best {
     width: 940px;
     height: 100vh;
     margin: 0 auto;
@@ -18,7 +78,7 @@
     align-items: center;
 }
 
-.section-best__title {
+.section__title--black {
     text-align: center;
     color: #2f3234;
     text-transform: uppercase;

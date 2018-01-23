@@ -28,30 +28,41 @@ a {
 }
 
 .wrapper {
-    overflow: hidden;
-    min-width: 1100px;
-    min-height: 100%;
+    position: relative;
+    min-width: 960px;
+    height: 100%;
 }
 
-.clearfix {
-    content: "";
-    display: table;
-    clear: both;
+.maincontent {
+    height: 100%;
 }
 
-.section-first {
-    background-image: url(../../img/fon1.png);
+.section {
+    height: 100vh;
+    min-height: 650px;
+    display: flex;
+    justify-content: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
     background-position: center center;
+}
+
+.container {
+    width: 940px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.welcome {
+    background-image: url(../../img/fon1.png);
     overflow: hidden;
     position: relative;
-    min-width: 100%;
-    min-height: 100%;
     height: 100vh;
 }
 
-.section-first::before {
+.welcome::before {
     content: "";
     display: block;
     width: 100%;
@@ -62,6 +73,129 @@ a {
     left: 0;
 }
 
+.welcome__header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.navigation {
+    font-family: "ubuntu", arial, sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.navigation__list {
+    display: flex;
+}
+
+.navigation__item {
+    margin-right: 17px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.navigation__link {
+    font-weight: 500;
+    font-size: 13px;
+    color: #f0f0f0;
+    cursor: pointer;
+}
+
+.navigation__item::before {
+    content: ' \25CF';
+    font-size: 9px;
+    color: white;
+    margin-right: 17px;
+}
+
+.navigation__item:first-of-type::before {
+    content: ' ';
+}
+
+.button {
+    font-family: "ubuntu", arial, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: .3s;
+}
+
+.button_color_orange {
+    background-color: #e45028;
+}
+
+.button_color_orange:hover {
+    background-color: #c1401e;
+}
+
+.welcome__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.welcome-content {
+    display: flex;
+    align-items: center;
+}
+
+.welcome-content__left {
+    width: 50%;
+}
+
+.welcome-content__right {
+    width: 50%;
+}
+
+.section__title {
+    text-transform: uppercase;
+    font-family: "gagalin", arial, sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+    margin: 0;
+    margin-top: 40px;
+    letter-spacing: 2px;
+}
+
+.section__title--orange {
+    color: #f9b43b;
+}
+
+.welcome-content__description {
+    font-family: "lifehack", arial, sans-serif;
+    font-size: 65px;
+    color: #ffffff;
+    line-height: 0.95em;
+    margin-top: 20px;
+}
+
+.arrow {
+    width: 30px;
+    height: 20px;
+    background-image: url(../../img/arrow-scroll.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+}
+
+
+/*
 .container {
     margin: 0 auto;
     width: 940px;
@@ -69,7 +203,7 @@ a {
     position: relative;
 }
 
-.header {
+.welcome__header {
     height: 80px;
     width: 940px;
     display: flex;
@@ -80,7 +214,7 @@ a {
     padding-top: 9px;
 }
 
-.header__logo {
+.logo {
     margin-right: auto;
 }
 
@@ -104,6 +238,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-transform: uppercase;
 }
 
 .navigation__item::before {
@@ -115,10 +250,6 @@ a {
 
 .navigation__item:first-of-type::before {
     content: ' ';
-}
-
-.navigation__text {
-    text-transform: uppercase;
 }
 
 .header__button {}
@@ -161,6 +292,7 @@ a {
 .banner__text-title {
     text-transform: uppercase;
     font-family: "gagalin";
+    font-weight: 400;
     font-size: 70px;
     color: #f9b43b;
     margin: 0;
@@ -185,6 +317,7 @@ a {
     left: 50%;
     top: 93vh;
 }
+*/
 
 .nav-scroll {
     position: fixed;
