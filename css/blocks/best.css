@@ -13,11 +13,14 @@
     margin-bottom: 50px;
 }
 
+.advantages {
+    width: 100%;
+}
+
 .advantages__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 940px;
 }
 
 .advantages__item {
