@@ -1,0 +1,89 @@
+.team {
+  background: url("../img/team.png") center center no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.team__container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background: rgba(47, 50, 52, 0.93);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.team__content {
+  width: 70%; }
+
+.team__content .section__title--orange {
+  margin-bottom: 50px; }
+
+.team__acco-item {
+  margin-bottom: 35px; }
+
+.team__acco-item--active .team__acco-title {
+  color: #f9b43b;
+  margin-bottom: 20px; }
+  .team__acco-item--active .team__acco-title::before {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
+
+.team__acco-item--active .team__acco-content {
+  height: auto; }
+
+.team__acco-pic {
+  margin: 0 20px 0 20px; }
+
+.team__acco-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; }
+
+.team__acco-text {
+  color: #ffffff; }
+
+.team__acco-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0;
+  overflow: hidden; }
+
+.team__acco-title {
+  text-transform: uppercase;
+  font-family: "gagalin", arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .team__acco-title::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 9px solid transparent;
+    border-bottom-width: 0;
+    border-top-color: #f9b43b;
+    margin-right: 8px; }
+
+.team__acco-article-title {
+  font-size: 16px;
+  line-height: 1.15;
+  margin-bottom: 14px;
+  letter-spacing: 0.2px; }
+
+.team__acco-article-content {
+  line-height: 24px;
+  font-weight: 300;
+  font-size: 14px; }
