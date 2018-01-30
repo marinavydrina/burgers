@@ -1,80 +1,83 @@
 .reviews__list {
-    width: 100%;
-    color: #ffffff;
-    display: flex;
-    flex-wrap: wrap;
-}
+  width: 100%;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .reviews__item {
-    width: 25%;
-    height: 50%;
-}
+  width: 25%;
+  height: 50%; }
 
 .review {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-}
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .review__img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    filter: grayscale(100%);
-    z-index: -1;
-}
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  z-index: -1; }
 
 .review__content {
-    padding: 0 20px;
-    opacity: 0;
-    transform: scale(.8);
-    transition: .5s;
-}
+  padding: 0 rem(20px);
+  opacity: 0;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
 
 .review:hover .review__content {
-    opacity: 1;
-    transform: scale(1);
-}
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
 
 .review:hover .review__img::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.70);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 .review__title {
-    margin: 0;
-    font-family: "gagalin", arial, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    margin-bottom: 25px;
-    letter-spacing: .1em;
-}
+  margin: 0;
+  font-family: "gagalin", arial, sans-serif;
+  font-weight: 400;
+  font-size: rem(14px);
+  margin-bottom: rem(25px);
+  letter-spacing: 0.1em; }
 
 .review__description {
-    font-family: "ubuntu", arial, sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
-    margin-bottom: 25px;
-}
+  font-family: "ubuntu", arial, sans-serif;
+  font-size: rem(14px);
+  font-weight: 300;
+  line-height: rem(24px);
+  margin-bottom: rem(25px); }
 
 .button_color_gray {
-    background-color: #2f3234;
-}
+  background-color: #2f3234; }
 
 .button_color_gray:hover {
-    background-color: #1f2122;
-}
+  background-color: #1f2122; }

@@ -1,0 +1,129 @@
+.team {
+    background: url("../../img/team.png") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.team__container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background: rgba(#2f3234, 0.93);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include tablets {
+        width: 100%;
+    }
+}
+
+.team__content {
+    width: 70%;
+}
+
+.team__content {
+    .section__title--orange {
+        margin-bottom: rem(50px);
+    }
+}
+
+.team__acco {
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.team__acco-item {
+    margin-bottom: rem(35px);
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.team__acco-item--active {
+    .team__acco-title {
+        color: #f9b43b;
+        margin-bottom: rem(20px);
+        &::before {
+            transform: rotate(180deg);
+        }
+    }
+    .team__acco-content {
+        height: auto;
+    }
+}
+
+.team__acco-pic {
+    margin: 0 rem(20px) rem(10px) rem(20px);
+}
+
+.team__acco-avatar {
+    width: rem(100px);
+    height: rem(100px);
+    border-radius: 50%;
+}
+
+.team__acco-text {
+    color: #ffffff;
+    width: rem(220px);
+    @include tablets {
+        width: rem(350px);
+        text-align: center;
+    }
+}
+
+.team__acco-content {
+    display: flex;
+    height: 0;
+    overflow: hidden;
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.team__acco-title {
+    text-transform: uppercase;
+    font-family: "gagalin", arial, sans-serif;
+    font-weight: 400;
+    font-size: rem(14px);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    &::before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border: rem(6px) solid transparent;
+        border-bottom-width: 0;
+        border-top-color: #f9b43b;
+        margin-right: rem(10px);
+    }
+    @include tablets {
+        font-size: rem(23px);
+    }
+}
+
+.team__acco-article-title {
+    font-size: rem(16px);
+    line-height: rem(24px);
+    margin-bottom: rem(14px);
+    letter-spacing: rem(0.2px);
+    @include tablets {
+        font-size: rem(14px);
+        margin-bottom: rem(10px);
+    }
+}
+
+.team__acco-article-content {
+    line-height: rem(24px);
+    font-weight: 300;
+    font-size: rem(14px);
+}

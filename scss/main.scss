@@ -1,7 +1,11 @@
+$tablets: 768px;
+$phones: 480px;
 @import url("layout/normalize.css");
 @import url("layout/fonts.css");
-@import url("blocks/first.css");
-@import url("blocks/best.css");
-@import url("blocks/reviews.css");
-@import url("blocks/team.css");
-@import url("blocks/order.css");
+@import "layout/media.scss";
+@import "blocks/first.scss";
+@import "blocks/best.scss";
+@import "blocks/reviews.scss";
+@import "blocks/team.scss";
+@import "blocks/order.scss";
+@import "blocks/menu-acco.scss";

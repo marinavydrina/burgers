@@ -1,0 +1,209 @@
+.order {
+    background: url("../../img/order.png") center center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    .section__title {
+        justify-content: center;
+        margin-bottom: rem(50px);
+        @include tablets {
+            font-size: rem(68px);
+            margin-bottom: rem(45px);
+        }
+    }
+}
+
+.form {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+}
+
+.form__col {
+    width: 50%;
+    @include tablets {
+        width: 70%;
+    }
+    @include phones {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.form__row {
+    margin-bottom: rem(15px);
+    display: flex;
+}
+
+.form__block {
+    display: block;
+    width: 100%;
+    flex: 1;
+    margin-left: rem(20px);
+}
+
+.form__title {
+    margin-bottom: rem(8px);
+    font-family: "ubuntu", arial, sans-serif;
+    color: #fff;
+    font-size: rem(14px);
+    font-weight: 300;
+}
+
+.form__input {
+    font-size: rem(14px);
+    padding: rem(7.5px) rem(10px);
+    background: #fff;
+    border-radius: rem(5px);
+    border: rem(2px) solid #fff;
+    width: 100%;
+    &:focus {
+        outline: none;
+        border: rem(2px) solid #f9b43b;
+        border-radius: rem(5px);
+    }
+}
+
+.form__input_textarea {
+    height: rem(110px);
+    resize: none;
+}
+
+.form__buttons {
+    margin-left: rem(20px);
+}
+
+.form__radio {
+    position: relative;
+    white-space: nowrap;
+    margin-right: rem(20px);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.form__radio-elem {
+    position: absolute;
+    top: 0;
+    left: rem(-9999px);
+}
+
+.form__radio-fake {
+    width: rem(16px);
+    height: rem(16px);
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: rem(0px);
+        height: rem(0px);
+        border-radius: 50%;
+        background: #e45028;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: width 0.3s, height 0.3s;
+    }
+}
+
+.form__radio-elem:checked {
+    &+.form__radio-fake {
+        &:after {
+            width: rem(8px);
+            height: rem(8px);
+        }
+    }
+}
+
+.form__radio-title {
+    font-size: rem(14px);
+    color: #fff;
+    margin-left: rem(10px);
+}
+
+.form__radio_checkbox {
+    .form__radio-fake {
+        border-radius: rem(0px);
+    }
+    .form__radio-elem {
+        &+.form__radio-fake {
+            &:after {
+                background-image: transparent;
+            }
+        }
+    }
+    .form__radio-elem:checked {
+        &+.form__radio-fake {
+            &:after {
+                background-image: url("../../img/icons/check.svg") 50% no-repeat transparent;
+                background-size: contain;
+                width: rem(11px);
+                height: rem(9px);
+            }
+        }
+    }
+}
+
+.form__button {
+    margin-right: rem(20px);
+    border: 0;
+    background: #e45028;
+    font-size: rem(13px);
+    text-transform: uppercase;
+    border-radius: rem(5px);
+    color: #ffffff;
+    font-family: "ubuntu", arial, sans-serif;
+    padding: rem(10px) rem(15px);
+    cursor: pointer;
+}
+
+.form__button_reset {
+    padding-left: 0;
+    padding-right: 0;
+    text-transform: none;
+    background: transparent;
+}
+
+//fixed-menu
+.fixed-menu {
+    position: fixed;
+    top: rem(20px);
+    right: rem(20px);
+}
+
+.fixed-menu__item {
+    margin-bottom: rem(5px);
+}
+
+.fixed-menu__link {
+    display: flex;
+    width: rem(16px);
+    height: rem(16px);
+    border: rem(1px) solid transparent;
+    border-radius: 50%;
+    position: relative;
+    &:hover {
+        border-color: #fff;
+    }
+    &:before {
+        content: "";
+        width: rem(6px);
+        height: rem(6px);
+        display: block;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

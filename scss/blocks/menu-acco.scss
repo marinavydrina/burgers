@@ -1,0 +1,65 @@
+.menu-acco {
+    background-image: url("../../img/menu-acco.png");
+    position: relative;
+}
+
+.section__title--white {
+    color: #fff;
+    position: absolute;
+    left: rem(90px);
+    top: rem(110px);
+}
+
+.menu-acco__list {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.menu-acco__item {
+    display: flex;
+    &--active {
+        .menu-acco__title {
+            color: #f9b43b;
+        }
+        .menu-acco__content {
+            width: 540px;
+        }
+    }
+}
+
+.menu-acco__trigger {
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: rem(80px);
+    align-items: flex-end;
+    padding-bottom: 35px;
+}
+
+.menu-acco__title {
+    text-transform: uppercase;
+    font-family: "gagalin", arial, sans-serif;
+    font-weight: 400;
+    font-size: rem(48px);
+    color: #fff;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    width: 100%;
+}
+
+.menu-acco__content {
+    background-color: rgba(47, 50, 52, 0.9);
+    width: 0;
+    overflow: hidden;
+    transition: width 0.5s;
+}
+
+.menu-acco__text {
+    padding: rem(60px) rem(35px);
+    color: #fff;
+    font-weight: 300;
+    font-size: rem(14px);
+    line-height: rem(24px);
+    min-width: 540px;
+}
