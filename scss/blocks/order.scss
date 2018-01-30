@@ -9,6 +9,13 @@
         @include tablets {
             font-size: rem(68px);
             margin-bottom: rem(45px);
+            white-space: nowrap;
+        }
+        @include phones {
+            white-space: inherit;
+            margin-top: rem(30px);
+            margin-bottom: rem(30px);
+            font-size: rem(60px);
         }
     }
 }
@@ -38,6 +45,9 @@
 .form__row {
     margin-bottom: rem(15px);
     display: flex;
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .form__block {
@@ -128,6 +138,7 @@
     font-size: rem(14px);
     color: #fff;
     margin-left: rem(10px);
+    font-weight: 300;
 }
 
 .form__radio_checkbox {
@@ -144,7 +155,7 @@
     .form__radio-elem:checked {
         &+.form__radio-fake {
             &:after {
-                background-image: url("") 50% no-repeat transparent;
+                background-image: url("../img/icons/check.svg") 50% no-repeat transparent;
                 background-size: contain;
                 width: rem(11px);
                 height: rem(9px);
@@ -176,8 +187,14 @@
 //fixed-menu
 .fixed-menu {
     position: fixed;
-    top: rem(20px);
-    right: rem(20px);
+    top: rem(80px);
+    right: rem(40px);
+    @include tablets {
+        display: none;
+    }
+    @include phones {
+        display: none;
+    }
 }
 
 .fixed-menu__item {

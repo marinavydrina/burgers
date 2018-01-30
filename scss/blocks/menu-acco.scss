@@ -8,6 +8,15 @@
     position: absolute;
     left: rem(90px);
     top: rem(110px);
+    @include tablets {
+        left: rem(55px);
+        font-size: rem(58px);
+    }
+    @include phones {
+        left: rem(15px);
+        top: rem(55px);
+        font-size: rem(48px);
+    }
 }
 
 .menu-acco__list {
