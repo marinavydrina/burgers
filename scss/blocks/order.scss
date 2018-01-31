@@ -1,8 +1,6 @@
 .order {
     background: url("../img/order.png") center center no-repeat;
     background-size: cover;
-    display: flex;
-    align-items: center;
     .section__title {
         justify-content: center;
         margin-bottom: rem(50px);
@@ -13,11 +11,29 @@
         }
         @include phones {
             white-space: inherit;
-            margin-top: rem(30px);
+            margin-top: rem(20px);
             margin-bottom: rem(30px);
             font-size: rem(60px);
         }
     }
+}
+
+.button_desktop {
+    @include phones {
+        display: none;
+    }
+}
+
+.button_phone {
+    display: none;
+    @include phones {
+        display: inline-block;
+    }
+}
+
+.order .container {
+    justify-content: center;
+    align-items: center;
 }
 
 .form {

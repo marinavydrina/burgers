@@ -314,3 +314,42 @@ h6 {
     width: rem(15px);
     height: rem(15px);
 }
+
+.hamburger-menu {
+    display: none;
+    position: relative;
+    height: rem(22px);
+    margin-left: rem(30px);
+    align-items: center;
+    @include tablets() {
+        display: flex;
+    }
+}
+
+.hamburger-menu__bars {
+    background-color: #fff;
+    width: rem(24px);
+    height: rem(5px);
+    border-radius: rem(3px);
+    &:before {
+        background-color: #fff;
+        width: rem(24px);
+        height: rem(5px);
+        border-radius: rem(3px);
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+    }
+}
+
+.hamburger-menu__bars:after {
+    background-color: #fff;
+    width: rem(24px);
+    height: rem(5px);
+    border-radius: rem(3px);
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
